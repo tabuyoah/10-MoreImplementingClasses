@@ -330,8 +330,12 @@ class CapitalT(object):
         # IMPORTANT RESTRICTION: You are NOT permitted to add any instance
         # variables beyond  h_rect  and  v_rect, at any point of this exercise.
         #######################################################################
-        h = CapitalT.h_rect
-        v = CapitalT.v_rect
+        cen = CapitalT.h_rect.get_center
+        w = abs(CapitalT.h_rect.corner_1.x - CapitalT.h_rect.corner_2.x)
+
+        return CapitalT(cen,)
+
+        
 
 
 # -----------------------------------------------------------------------------
